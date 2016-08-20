@@ -22,11 +22,10 @@ app.get('/', function (req, res) {
 	}
 
 
-	ipaddress = ipaddress.split(':')
 
 	//building JSON response
 	data = {
-		'ipaddress': ipaddress[3],
+		'ipaddress': ipaddress,
 		'language': accept_language[0],
 		'software': user_agent[0]
 	}
